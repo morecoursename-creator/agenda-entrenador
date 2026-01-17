@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agenda Entrenador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header-glow">
+    <h1>Agenda Fitness</h1>
+    <p>Entrena · Agenda · Progresa</p>
+    <button class="theme-btn" onclick="toggleTheme()">🌙 / ☀️</button>
+</header>
+
+
+
+    <main class="container">
+
+        <section class="form-section">
+            <h2>Nueva Cita</h2>
+
+            <input type="text" id="name" placeholder="Nombre del cliente">
+            <input type="date" id="date">
+            <div class="hours-container" id="hoursContainer"></div>
+            <button onclick="addAppointment()">Agendar</button>
+        </section>
+
+        <section class="list-section">
+            <h2>Citas Agendadas</h2>
+            <ul id="appointmentsList"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
