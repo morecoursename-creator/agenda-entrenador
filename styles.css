@@ -148,6 +148,10 @@ li {
 @media (max-width: 600px) {
     .container {
         padding: 15px;
+        flex-direction: column;
+    }
+    section {
+        width: 90%;
     }
 }
 
@@ -184,5 +188,6 @@ li {
     cursor: not-allowed;
     color: white;
 }
+
 
 
